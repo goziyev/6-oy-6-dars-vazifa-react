@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useEffect } from "react";
 import TableAdmin from "../admin-tables";
 import { useRef } from "react";
+import ProductCards from "../product-cards";
 
 export default function AdminPanel() {
   const [data, setData] = useState([]);
@@ -75,7 +76,7 @@ export default function AdminPanel() {
   },[data])
 
   return (
-    <div>
+    <>
       <form className={style.formWrapper}>
         <label htmlFor="name">Mahsulot nomi <span>* </span></label>
         <input ref={InputName} type="text" id="name" placeholder="Mahsuot nomini kiriting..."/>
@@ -89,6 +90,7 @@ export default function AdminPanel() {
         <button onClick={handleToSent} className={style.toSent}>Yuborish</button>
       </form>
       <TableAdmin data = {data} setData = {setData}/>
-    </div>
+      <ProductCards data = {data}/>
+    </>
   );
 }
