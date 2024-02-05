@@ -1,0 +1,49 @@
+.formWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 40%;
+  /* background-color:; */
+  color: white;
+  padding: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+}
+.formWrapper input {
+  padding: 16px;
+  outline: none;
+  background-color: transparent;
+  border-radius: 30px;
+  color:white;
+  border: 2px solid white;
+  outline-color: white;
+}
+.formWrapper input::placeholder{
+    color: white;
+}
+
+
+.formWrapper label {
+  font-size: 20px;
+}
+.formWrapper label span {
+  color: red;
+  font-weight: bolder;
+  font-family: sans-serif;
+}
+
+.toSent {
+  background-color: transparent;
+  padding: 15px 20px;
+  border-color: white;
+  color: white;
+  border-radius: 28px;
+  font-weight: 700;
+  transition: all 0.5s linear;
+  cursor: pointer;
+}
+.toSent:hover {
+  background-color: white;
+  color: blue;
+}
